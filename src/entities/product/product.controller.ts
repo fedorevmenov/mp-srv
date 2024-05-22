@@ -40,7 +40,6 @@ export class ProductController{
       @Body() body: any,
       @UploadedFile() image: Express.Multer.File,
     ) {
-        console.log(111, image)
       const renamedFilename = renameUploadedFile(image.filename, PRODUCTS_IMAGES_FOLDER_PATH)
       await this.productService.createProduct({ ...body, image: renamedFilename })
       return { status: 'ok' }

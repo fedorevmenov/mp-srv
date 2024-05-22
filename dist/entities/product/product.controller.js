@@ -34,7 +34,6 @@ let ProductController = class ProductController {
         return { status: 'ok', data: productData };
     }
     async createProduct(body, image) {
-        console.log(111, image);
         const renamedFilename = (0, fileUploader_1.renameUploadedFile)(image.filename, storagePaths_1.PRODUCTS_IMAGES_FOLDER_PATH);
         await this.productService.createProduct({ ...body, image: renamedFilename });
         return { status: 'ok' };

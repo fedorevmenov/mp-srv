@@ -14,9 +14,7 @@ export const getMulterOptions = (relativePath: string = '') => ({
       const splittedRelativePath = relativePath.split('/')
 
       let incrementalPath = storagePath
-        console.log(1,storagePath)
-        console.log(2,incrementalPath)
-        console.log(3,relativePath)
+
       if (!existsSync(storagePath + relativePath.toString().replace(',', '/'))) {
         splittedRelativePath.forEach((folder) => {
           if (!existsSync(incrementalPath + folder)) {
