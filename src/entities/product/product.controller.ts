@@ -2,7 +2,7 @@ import { Controller, Get, Res, Req, Post, Put, Delete, Patch, UseInterceptors, P
 import { FileInterceptor } from "@nestjs/platform-express"
 import { Request, Response } from "express"
 import { ProductService } from "./product.service"
-import { getMulterOptions, renameUploadedFile } from '@helpers/fileUploader'
+import { renameUploadedFile, getMulterOptions } from '@helpers/fileUploader'
 import { PRODUCTS_IMAGES_FOLDER_PATH } from '@consts/storagePaths'
 
 
