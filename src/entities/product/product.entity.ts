@@ -22,4 +22,4 @@ export class Product{
     @Column({name: 'image', type:'varchar'})
     image: string
     
-}
+} 

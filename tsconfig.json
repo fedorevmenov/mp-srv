@@ -14,6 +14,7 @@
       "@db/*":["src/db/*"],
       "@entities/*":["src/entities/*"],
       "@helpers/*": ["src/helpers/*"],
+      "@services/*": ["src/services/*"],
       "@consts/*": ["src/consts/*"], 
     },
     "incremental": true,
